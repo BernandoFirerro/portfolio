@@ -20,34 +20,6 @@ const portfolioMenuMobile = document.querySelector('.portfolio__list-title')
 portfolioMenuMobile.addEventListener('click', function () {
     portfolioMenu.classList.toggle('active')
 })
-//PORTFOLIO MENU LOGIC
-for (let i = 0; i <= menuLinks.length; i++) {
-    menuLinks[i].addEventListener('click', function () {
-        for (el of item) {
-            el.classList.remove('active')
-        }
-
-        if (i == 0) {
-            item.forEach(function (el, i) {
-                item[i].classList.add('active')
-            })
-        } else if (i == 1) {
-            item[1].classList.add('active');
-            item[2].classList.add('active')
-            item[3].classList.add('active')
-        } else if (i == 2) {
-            item[4].classList.add('active')
-        } else if (i == 3) {
-            item[0].classList.add('active')
-        }
-
-
-        for (elem of menuLinks) {
-            elem.classList.remove('active')
-        }
-        menuLinks[i].classList.toggle('active')
-    })
-}
 
 
 //MENU LOGIC
@@ -97,3 +69,32 @@ sendBtn.addEventListener('click', function (event) {
         message => alert('The message has been sent!')
     );
 })
+
+//PORTFOLIO MENU LOGIC
+for (let i = 0; i <= menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', function () {
+        for (el of item) {
+            el.classList.remove('active')
+        }
+
+        if (i == 0) {
+            item.forEach(function (el, i) {
+                item[i].classList.add('active')
+            })
+        } else if (i == 1) {
+            item[1].classList.add('active');
+            item[2].classList.add('active')
+            item[3].classList.add('active')
+        } else if (i == 2) {
+            item[4].classList.add('active')
+        } else if (i == 3) {
+            item[0].classList.add('active')
+        }
+
+
+        for (elem of menuLinks) {
+            elem.classList.remove('active')
+        }
+        menuLinks[i].classList.toggle('active')
+    })
+}
