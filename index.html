@@ -1,10 +1,403 @@
-<HTML>
+<!-- >
+##########################################################################
+#
+#
+#        
+#  ░██████╗░░██████╗░█████╗░██████╗░██╗░░░██╗░█████╗░███╗░░██╗███╗░░██╗
+#  ██╔════╝░██╔════╝██╔══██╗██╔══██╗╚██╗░██╔╝██╔══██╗████╗░██║████╗░██║
+#  ██║░░██╗░╚█████╗░███████║██████╔╝░╚████╔╝░███████║██╔██╗██║██╔██╗██║
+#  ██║░░╚██╗░╚═══██╗██╔══██║██╔══██╗░░╚██╔╝░░██╔══██║██║╚████║██║╚████║
+#  ╚██████╔╝██████╔╝██║░░██║██║░░██║░░░██║░░░██║░░██║██║░╚███║██║░╚███║
+#  ░╚═════╝░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝
+#
+#
+########################################################################## 
+<! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gsaryann - portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
   <body>
-    <div class="container" style ="background-color: aqua; font-family: 'Montserrat'; font-size:3em; width: 100%; height: 100vh" >
-    <p style = "color:red " >Hello world✋❤️</p>
-    <p style = "color:green" >It's my portfolio page🎉</p>
-    <video autoplay controls height="720" width="1280" src="https://file-examples.com/storage/fe235481fb64f1ca49a92b5/2017/04/file_example_MP4_1280_10MG.mp4"/></video>
-    <img height= "800" width="800" src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg" />
+    <div class="wrapper" onmousemove="mouseCoords(event)">
+      <section class="main" id="home">
+        <header class="header">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__item-link">home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__item-link">about</a>
+              </li>
+              <li class="nav__item">
+                <a href="#portfolio" class="nav__item-link">portfolio</a>
+              </li>
+              <li class="nav__item">
+                <a href="#experience" class="nav__item-link">experience</a>
+              </li>
+              <li class="nav__item">
+                <a href="#blog" class="nav__item-link">blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__item-link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__mobile">
+            <div class="header__mobile-line"></div>
+            <div class="header__mobile-line"></div>
+            <div class="header__mobile-line"></div>
+          </div>
+        </header>
+
+        <div class="main__content">
+          <div class="main__content-title">hello, i am</div>
+          <div class="main__content-name">gagik</div>
+          <div class="main__content-desc">I create, I do and I achieve</div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__main">
+            <div class="about__main_content">
+              <div class="about__main-title">gagik sargsyan</div>
+              <div class="about__main-title-desc">
+                <span class="colortext">web</span> and
+                <span class="colortext">software</span> developer
+              </div>
+              <div class="about__main-desc">
+                I am a young developer, a first year student of Tyumen State
+                University. I like to do everything that has to do with website
+                development.
+              </div>
+            </div>
+
+            <div class="about__main-photo">
+              <img
+                src="img/upload/person.png"
+                alt=""
+                class="about__main-photo-pic"
+              />
+            </div>
+
+            <div class="about__main-skill">
+              <div class="about__main-skill-item">
+                <div class="about__main-skill-title">Design ( 75% )</div>
+                <div class="about__main-skill-box">
+                  <div
+                    class="about__main-skill-box-inner"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+              <div class="about__main-skill-item">
+                <div class="about__main-skill-title">Photography ( 80% )</div>
+                <div class="about__main-skill-box">
+                  <div
+                    class="about__main-skill-box-inner"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div class="about__main-skill-item">
+                <div class="about__main-skill-title">Marketing ( 70% )</div>
+                <div class="about__main-skill-box">
+                  <div
+                    class="about__main-skill-box-inner"
+                    style="width: 70%"
+                  ></div>
+                </div>
+              </div>
+              <div class="about__main-skill-item">
+                <div class="about__main-skill-title">Branding ( 75% )</div>
+                <div class="about__main-skill-box">
+                  <div
+                    class="about__main-skill-box-inner"
+                    style="width: 75%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-short" id="cont-s">
+        <div class="container">
+          <div class="about__contact-main">
+            <div class="about__contact-content">
+              <div class="about__contact-block">
+                <div class="about__contact-img">
+                  <img
+                    src="img/icon/phone.png"
+                    alt=""
+                    class="about__contact-pic"
+                  />
+                </div>
+                <div class="about__contact-block-content">
+                  <div class="about__contact-title">telegram</div>
+                  <div class="about__contact-desc">
+                    <a href="https://t.me/gsaryann">@gsaryann</a>
+                  </div>
+                </div>
+              </div>
+              <div class="about__contact-block">
+                <div class="about__contact-img">
+                  <img
+                    src="img/icon/address.png"
+                    alt=""
+                    class="about__contact-pic"
+                  />
+                </div>
+                <div class="about__contact-block-content">
+                  <div class="about__contact-title">address</div>
+                  <div class="about__contact-desc">Tyumen, Russia</div>
+                </div>
+              </div>
+              <div class="about__contact-block">
+                <div class="about__contact-img">
+                  <img
+                    src="img/icon/email.png"
+                    alt=""
+                    class="about__contact-pic"
+                  />
+                </div>
+
+                <div class="about__contact-block-content">
+                  <div class="about__contact-title">mail Address</div>
+                  <div class="about__contact-desc">chatgagik@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="portfolio__header">
+            <div class="portfolio__title">portfolio</div>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__left">
+              <div class="portfolio__list">
+                <div class="portfolio__list-title">choose</div>
+                <ul class="portfolio__list-content">
+                  <li class="portfolio__list-item active">all</li>
+                  <li class="portfolio__list-item" data-type="site">
+                    websites
+                  </li>
+
+                  <li class="portfolio__list-item" data-type="game">Games</li>
+                  <li class="portfolio__list-item" data-type="bot">
+                    chat bots
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__right">
+              <ul class="portfolio__right-content">
+                <li class="portfolio__right-content-img active" data-type="bot">
+                  <img
+                    src="img/upload/portfolio-2.png"
+                    alt=""
+                    class="portfolio__right-content-img-pic"
+                  />
+                </li>
+
+                <li
+                  class="portfolio__right-content-img active"
+                  data-type="site"
+                >
+                  <img
+                    src="img/upload/portfolio-3.png"
+                    alt=""
+                    class="portfolio__right-content-img-pic"
+                  />
+                </li>
+
+                <li
+                  class="portfolio__right-content-img active"
+                  data-type="site"
+                >
+                  <img
+                    src="img/upload/portfolio-5.png"
+                    alt=""
+                    class="portfolio__right-content-img-pic"
+                  />
+                </li>
+                <li
+                  class="portfolio__right-content-img active"
+                  data-type="site"
+                >
+                  <img
+                    src="img/upload/portfolio-4.png"
+                    alt=""
+                    class="portfolio__right-content-img-pic"
+                  />
+                </li>
+                <li
+                  class="portfolio__right-content-img active"
+                  data-type="game"
+                >
+                  <a href="https://gsaryann.github.io/beaver/">
+                    <img
+                      src="img/upload/portfolio-6.png"
+                      alt=""
+                      class="portfolio__right-content-img-pic"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="experience__header">
+            <div class="experience__header-title">experience</div>
+          </div>
+          <div class="experience__content">
+            <div class="experience__content-block">
+              <div class="experience__content-block-title">
+                2017<br />-<br />2018
+              </div>
+              <div class="experience__content-block-separator"></div>
+              <div class="experience__content-block-main">
+                I started my journey in IT by learning the Pascal programming
+                language.
+              </div>
+            </div>
+            <div
+              class="experience__content-block experience__content-block-rev"
+            >
+              <div class="experience__content-block-title">
+                2018<br />-<br />2019
+              </div>
+              <div class="experience__content-block-separator"></div>
+              <div class="experience__content-block-main">
+                After realizing that Pascal was no longer in demand, I decided
+                to continue learning in the C# programming language, namely by
+                creating games on Unity.
+              </div>
+            </div>
+            <div class="experience__content-block">
+              <div class="experience__content-block-title">
+                2019<br />-<br />2021
+              </div>
+              <div class="experience__content-block-separator"></div>
+              <div class="experience__content-block-main">
+                During this period I was diligently engaged in web-development,
+                actively studying HTML, CSS, JS.
+              </div>
+            </div>
+            <div
+              class="experience__content-block experience__content-block-rev"
+            >
+              <div class="experience__content-block-title">
+                2021<br />-<br />2022
+              </div>
+              <div class="experience__content-block-separator"></div>
+              <div class="experience__content-block-main">
+                Due to having to take school exams in Python, I temporarily
+                suspended my web industry education and immersed myself in OOP
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__content">
+            <div class="container">
+              <div class="contact__content-header">
+                <div class="contact__content-header-title">contact us</div>
+                <div class="contact__content-header-desc">
+                  Do you still have questions? Then fill out the form and I will
+                  contact you!
+                </div>
+              </div>
+              <div class="contract__content-main">
+                <form action="" class="feedback">
+                  <div class="feedback__inputs">
+                    <input
+                      type="text"
+                      class="feedback__input"
+                      placeholder="Name"
+                      name="name"
+                    />
+                    <input
+                      type="email"
+                      class="feedback__input"
+                      placeholder="Email"
+                      name="email"
+                    />
+                  </div>
+                  <div class="feedback__text">
+                    <textarea
+                      name="desc"
+                      id=""
+                      cols=""
+                      rows="2"
+                      class="feedback__textarea"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="feedback__btn">
+                    <button class="feedback__btn-send">SEND MESSAGE</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            Copyright 2023 by gsaryann<br />All Rights Reserved.
+          </div>
+        </div>
+      </footer>
     </div>
-    </body>
-</HTML>
+    <div class="up none">
+      <a href="#" class="up__link"
+        ><img src="img/icon/up.png" alt="" class="up__link-img"
+      /></a>
+    </div>
+    <div class="menu__mobile">
+      <nav class="menu__mobile-nav">
+        <ul class="menu__mobile-list">
+          <li class="menu__mobile-item">
+            <a href="#home" class="menu__mobile-item-link">home</a>
+          </li>
+          <li class="menu__mobile-item">
+            <a href="#about" class="menu__mobile-item-link">about</a>
+          </li>
+          <li class="menu__mobile-item">
+            <a href="#portfolio" class="menu__mobile-item-link">portfolio</a>
+          </li>
+          <li class="menu__mobile-item">
+            <a href="#experience" class="menu__mobile-item-link">experience</a>
+          </li>
+          <li class="menu__mobile-item">
+            <a href="#blog" class="menu__mobile-item-link">blog</a>
+          </li>
+          <li class="menu__mobile-item">
+            <a href="#contact" class="menu__mobile-item-link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
